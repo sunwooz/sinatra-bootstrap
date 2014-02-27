@@ -1,13 +1,26 @@
 <html>
   <head>
+    <style>
+      body {
+        background-color: black !important;
+      }
+
+      #soul {
+        text-align: center !important; 
+        color: white !important;
+      }
+
+      .header {
+        background-color: black !important;
+      }
+    </style>
     <meta charset="utf-8" />
     <title></title>
-    <link href="style.css" rel="stylesheet" />
   </head>
-  <body style="background-color: #FFF;">
+  <body>
 
     <div class="header">Flatiron Feelings Forever</div>
-    <h3 style="text-align:center; color:white;">soul-color:#FFF</h3>
+    <h3 id="soul">soul-color:#FFF</h3>
 
     <div id="message-stream">
       <% @messages.reverse.each do |message| %>
