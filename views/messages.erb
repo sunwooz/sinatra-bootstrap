@@ -4,13 +4,13 @@
     <title></title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body bgcolor="#FFF">
+  <body style="background-color: #FFF;">
 
     <div class="header">Flatiron Feelings Forever</div>
-    <h3>soul-color:#FFF</h3>
+    <h3 style="text-align:center; color:white;">soul-color:#FFF</h3>
 
     <div id="message-stream">
-      <% @messages.each do |message| %>
+      <% @messages.reverse.each do |message| %>
 
       <div class="message">
         <!-- <a href="" class="close"></a> -->
