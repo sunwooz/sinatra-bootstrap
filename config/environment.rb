@@ -4,7 +4,10 @@ Bundler.require(:default)
 require_relative '../models/message'
 require_relative '../app'
 
+# ActiveRecord::Base.establish_connection(
+#   :adapter => "postgresql",
+#   :database => 'HEROKU_POSTGRESQL_PINK_URL'
+# )
 ActiveRecord::Base.establish_connection(
-  :adapter => "postgresql",
-  :database => 'HEROKU_POSTGRESQL_PINK_URL'
+  ENV['DATABASE_URL'] || 'postgres://localhost/mydb'
 )
