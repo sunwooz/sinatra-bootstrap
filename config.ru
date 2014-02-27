@@ -1,11 +1,6 @@
-require './app'
+# config.ru
+require './config/environment'
 
-class MyApp < Sinatra::Base
+run MessagesApp.new
 
-  get '/' do
-    'hello'
-  end
-end
-
-use MyApp
-run Sinatra::Application
+$stdout.sync = true
