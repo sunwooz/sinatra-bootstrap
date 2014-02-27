@@ -22,10 +22,10 @@
     <div class="header">Flatiron Feelings Forever</div>
     <h3 id="soul">soul-color:#FFF</h3>
 
-    <div id="message-stream">
+    <div id="message-stream" class="row">
       <% @messages.reverse.each do |message| %>
 
-      <div class="message">
+      <div class="message col-md-8 col-md-offset-1">
         <!-- <a href="" class="close"></a> -->
         <div class="from"><%= message.from %></div>
         <div class="content"><%= message.content %></div>
